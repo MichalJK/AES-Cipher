@@ -318,7 +318,7 @@ void AES_Encrypt(unsigned char* wiadomosc, unsigned char* klucz)
 
 	int numberOfRounds = 9;
 
-	//runda inicjuj¹ca
+	//runda inicjuj ca
 	AddRoundKey(stan, klucz);
 
 	//kolejne rundy
@@ -432,7 +432,7 @@ void AES_Decrypt(unsigned char* wiadomosc, unsigned char* klucz)
 		stan[i] = wiadomosc[i];
 	}
 
-	//runda inicjuj¹ca
+	//runda inicjuj ca
 	AddRoundKey(stan, klucz + 160);
 	
 	//kolejne rundy
